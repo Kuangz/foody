@@ -6,15 +6,9 @@
 // to create separate JavaScript files as needed.
 //
 //= require jquery
-//= require_tree .
-//= require_self
+//= require angular.min
 
-if (typeof jQuery !== 'undefined') {
-	(function($) {
-		$('#spinner').ajaxStart(function() {
-			$(this).fadeIn();
-		}).ajaxStop(function() {
-			$(this).fadeOut();
-		});
-	})(jQuery);
-}
+//= require_self
+//= require home/HomeModule
+var app = angular.module('foody', ["HomeModule"])
+

@@ -68,6 +68,11 @@ grails.project.dependency.resolution = {
         runtime ":database-migration:1.4.0"
         runtime ":jquery:1.11.1"
 
+        runtime ":twitter-bootstrap:3.3.4"
+        compile ":joda-time:1.5"
+        compile ":fixtures:1.3"
+        compile ":console:1.5.6"
+        runtime ':jasper:1.9.0'
         // Uncomment these to enable additional asset-pipeline capabilities
         //compile ":sass-asset-pipeline:1.9.0"
         //compile ":less-asset-pipeline:1.10.0"
